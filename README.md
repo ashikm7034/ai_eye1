@@ -12,7 +12,7 @@ Each feature is organized in its own standalone module directory with dedicated 
 
 | Module / Folder | Feature Name | Core Computer Vision / AI Technology | Status | Viva Voce Examination Guide |
 |---|---|---|---|---|
-| [`01_real_time_walking_assistance/`](file:///d:/Ashik/project/01_real_time_walking_assistance/README.md) | **Real-Time Walking Assistance** | YOLOv8 multi-class detection, 3-corridor spatial obstacle analysis & directional walking cues (*Walk Straight, Steer Left, Steer Right, Stop*). | ✅ Completed | [View Report & 10 Viva Q&As](file:///d:/Ashik/project/01_real_time_walking_assistance/README.md#5-comprehensive-viva-voce--oral-exam-questions--answers) |
+| [`01_real_time_walking_assistance/`](file:///d:/Ashik/project/01_real_time_walking_assistance/README.md) | **Real-Time Walking Assistance** | Lightweight OpenCV DNN SSD MobileNet V3 detection, monocular ground-plane distance triangulation, 3-corridor spatial obstacle analysis & directional walking cues (*Walk Straight, Steer Left, Steer Right, Stop*). | ✅ Completed | [View Report & 10 Viva Q&As](file:///d:/Ashik/project/01_real_time_walking_assistance/README.md#5-comprehensive-viva-voce--oral-exam-questions--answers) |
 | [`02_approaching_vehicle_detection/`](file:///d:/Ashik/project/02_approaching_vehicle_detection/README.md) | **Approaching Vehicle Detection** | Multi-target optical area expansion tracking $\frac{dA}{dt}$, Time-to-Collision (TTC) physics model, and priority voice crash alerts. | ✅ Completed | [View Report & 10 Viva Q&As](file:///d:/Ashik/project/02_approaching_vehicle_detection/README.md#7-comprehensive-viva-voce--oral-examination-questions--answers) |
 | [`03_obstacle_and_path_hazard_detection/`](file:///d:/Ashik/project/03_obstacle_and_path_hazard_detection/README.md) | **Obstacle & Path-Hazard Detection** | Multi-zone spatial CV: Floor adaptive contrast cavities (potholes), Sobel + Hough periodic steps (stairs up/down), eye-level edge density (low branches), and glint reflection (wet floors). | ✅ Completed | [View Report & 10 Viva Q&As](file:///d:/Ashik/project/03_obstacle_and_path_hazard_detection/README.md#7-comprehensive-viva-voce--oral-examination-questions--answers) |
 | [`04_familiar_person_recognition/`](file:///d:/Ashik/project/04_familiar_person_recognition/README.md) | **Familiar Person Recognition** | Deep metric learning (YuNet face detector + SFace 128-D cosine distance matcher) to recognize family/friends with spatial direction & distance tags. | ✅ Completed | [View Report & 10 Viva Q&As](file:///d:/Ashik/project/04_familiar_person_recognition/README.md#5-viva-voce-examination-questions--answers-10-qas) |
@@ -48,6 +48,8 @@ python main.py
 
 ## 🚀 Individual Feature Direct Launchers
 
+All features automatically use your configured IP camera or webcam from `camera_settings.json`:
+
 ```bash
 # Feature 1: Real-Time Walking Assistance
 python -m 01_real_time_walking_assistance.main
@@ -61,10 +63,10 @@ python -m 03_obstacle_and_path_hazard_detection.main
 # Feature 4: Familiar Person Recognition
 python -m 04_familiar_person_recognition.main
 
-# Feature 5: Indian Currency Recognition (Uses Laptop Webcam)
+# Feature 5: Indian Currency Recognition
 python -m 05_currency_recognition.main
 
 # Feature 6: Text Reading (OCR)
 python -m 06_text_reading.main
 ```
-# ai_eye1
+

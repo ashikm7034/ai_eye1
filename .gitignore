@@ -1,0 +1,24 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Raw Heavy Training Datasets (~1.85 GB)
+05_currency_recognition/currency_dataset/
+currency_notes/
+05_currency_recognition/currency_notes/
+
+# Large Archives & Temp Test Audio
+models/*.tar.gz
+test_mic_sample.wav
+
+# Local Virtual Environments
+.venv/
+env/
+venv/
+ENV/
+
+# IDE / Editor Files
+.vscode/
+.idea/
+*.swp

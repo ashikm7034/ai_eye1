@@ -11,7 +11,9 @@ d:\Ashik\project\shared/
 ├── __init__.py
 ├── audio_engine.py      # Thread-safe Windows SAPI.SpVoice non-blocking speech synthesizer
 ├── camera_stream.py     # High-performance multi-threaded IP camera & webcam stream grabber
+├── object_detector.py   # Universal OpenCV DNN object detector (SSD MobileNet V3)
 ├── vision_utils.py      # Glassmorphic HUD overlay renderer, zone corridors, and direction banners
+├── voice_listener.py    # Background microphone listener for voice intent navigation
 └── README.md            # Architecture documentation & Viva Q&A
 ```
 
